@@ -1,0 +1,694 @@
+﻿Log file open, 09/14/16 12:44:41
+LogInit:Display: Running engine for game: ExploringSysOps
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1502681823) SRandInit(-1502681823).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.087688
+LogPluginManager: Loaded Plugin Paper2D, From C:/Program Files/Epic Games/4.13/Engine/Plugins/2D/Paper2D/Paper2D.uplugin
+LogPluginManager: Loaded Plugin LightPropagationVolume, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Blendables/LightPropagationVolume/LightPropagationVolume.uplugin
+LogPluginManager: Loaded Plugin BlankPlugin, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Developer/BlankPlugin/BlankPlugin.uplugin
+LogPluginManager: Loaded Plugin CodeLiteSourceCodeAccess, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Developer/CodeLiteSourceCodeAccess/CodeLiteSourceCodeAccess.uplugin
+LogPluginManager: Loaded Plugin GitSourceControl, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Developer/GitSourceControl/GitSourceControl.uplugin
+LogPluginManager: Loaded Plugin KDevelopSourceCodeAccess, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Developer/KDevelopSourceCodeAccess/KDevelopSourceCodeAccess.uplugin
+LogPluginManager: Loaded Plugin NullSourceCodeAccess, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Developer/NullSourceCodeAccess/NullSourceCodeAccess.uplugin
+LogPluginManager: Loaded Plugin OneSkyLocalizationService, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Developer/OneSkyLocalizationService/OneSkyLocalizationService.uplugin
+LogPluginManager: Loaded Plugin PerforceSourceControl, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Developer/PerforceSourceControl/PerforceSourceControl.uplugin
+LogPluginManager: Loaded Plugin SubversionSourceControl, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Developer/SubversionSourceControl/SubversionSourceControl.uplugin
+LogPluginManager: Loaded Plugin UObjectPlugin, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Developer/UObjectPlugin/UObjectPlugin.uplugin
+LogPluginManager: Loaded Plugin VisualStudioSourceCodeAccess, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Developer/VisualStudioSourceCodeAccess/VisualStudioSourceCodeAccess.uplugin
+LogPluginManager: Loaded Plugin XCodeSourceCodeAccess, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Developer/XCodeSourceCodeAccess/XCodeSourceCodeAccess.uplugin
+LogPluginManager: Loaded Plugin EpicSurvey, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Editor/EpicSurvey/EpicSurvey.uplugin
+LogPluginManager: Loaded Plugin MacGraphicsSwitching, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Editor/MacGraphicsSwitching/MacGraphicsSwitching.uplugin
+LogPluginManager: Loaded Plugin MobileLauncherProfileWizard, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Editor/MobileLauncherProfileWizard/MobileLauncherProfileWizard.uplugin
+LogPluginManager: Loaded Plugin PluginBrowser, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Editor/PluginBrowser/PluginBrowser.uplugin
+LogPluginManager: Loaded Plugin SpeedTreeImporter, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Editor/SpeedTreeImporter/SpeedTreeImporter.uplugin
+LogPluginManager: Loaded Plugin SuperSearchEditor, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Editor/SuperSearchEditor/SuperSearchEditor.uplugin
+LogPluginManager: Loaded Plugin AlembicImporter, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Experimental/AlembicImporter/AlembicImporter.uplugin
+LogPluginManager: Loaded Plugin BlueprintStats, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Experimental/BlueprintStats/BlueprintStats.uplugin
+LogPluginManager: Loaded Plugin CharacterAI, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Experimental/CharacterAI/CharacterAI.uplugin
+LogPluginManager: Loaded Plugin CodeEditor, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Experimental/CodeEditor/CodeEditor.uplugin
+LogPluginManager: Loaded Plugin CodeView, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Experimental/CodeView/CodeView.uplugin
+LogPluginManager: Loaded Plugin HTML5Networking, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Experimental/HTML5Networking/HTML5Networking.uplugin
+LogPluginManager: Loaded Plugin LiveEditor, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Experimental/LiveEditor/LiveEditor.uplugin
+LogPluginManager: Loaded Plugin OSVR, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Experimental/OSVR/OSVR.uplugin
+LogPluginManager: Loaded Plugin Phya, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Experimental/Phya/Phya.uplugin
+LogPluginManager: Loaded Plugin SignificanceManager, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Experimental/SignificanceManager/SignificanceManager.uplugin
+LogPluginManager: Loaded Plugin SimpleHMD, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Experimental/SimpleHMD/SimpleHMD.uplugin
+LogPluginManager: Loaded Plugin StereoPanorama, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Experimental/StereoPanorama/StereoPanorama.uplugin
+LogPluginManager: Loaded Plugin StructBox, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Experimental/StructBox/StructBox.uplugin
+LogPluginManager: Loaded Plugin AndroidMedia, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Media/AndroidMedia/AndroidMedia.uplugin
+LogPluginManager: Loaded Plugin AvfMedia, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Media/AvfMedia/AvfMedia.uplugin
+LogPluginManager: Loaded Plugin MediaPlayerEditor, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Media/MediaPlayerEditor/MediaPlayerEditor.uplugin
+LogPluginManager: Loaded Plugin WmfMedia, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Media/WmfMedia/WmfMedia.uplugin
+LogPluginManager: Loaded Plugin MessagingDebugger, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Messaging/MessagingDebugger/MessagingDebugger.uplugin
+LogPluginManager: Loaded Plugin TcpMessaging, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Messaging/TcpMessaging/TcpMessaging.uplugin
+LogPluginManager: Loaded Plugin UdpMessaging, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Messaging/UdpMessaging/UdpMessaging.uplugin
+LogPluginManager: Loaded Plugin LevelSequenceEditor, From C:/Program Files/Epic Games/4.13/Engine/Plugins/MovieScene/LevelSequenceEditor/LevelSequenceEditor.uplugin
+LogPluginManager: Loaded Plugin MatineeToLevelSequence, From C:/Program Files/Epic Games/4.13/Engine/Plugins/MovieScene/MatineeToLevelSequence/MatineeToLevelSequence.uplugin
+LogPluginManager: Loaded Plugin NetcodeUnitTest, From C:/Program Files/Epic Games/4.13/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/NetcodeUnitTest.uplugin
+LogPluginManager: Loaded Plugin NUTUnrealEngine4, From C:/Program Files/Epic Games/4.13/Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/NUTUnrealEngine4.uplugin
+LogPluginManager: Loaded Plugin OnlineSubsystemGooglePlay, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Online/Android/OnlineSubsystemGooglePlay/OnlineSubsystemGooglePlay.uplugin
+LogPluginManager: Loaded Plugin OnlineSubsystemIOS, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Online/IOS/OnlineSubsystemIOS/OnlineSubsystemIOS.uplugin
+LogPluginManager: Loaded Plugin OnlineFramework, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Online/OnlineFramework/OnlineFramework.uplugin
+LogPluginManager: Loaded Plugin OnlineSubsystem, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Online/OnlineSubsystem/OnlineSubsystem.uplugin
+LogPluginManager: Loaded Plugin OnlineSubsystemAmazon, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Online/OnlineSubsystemAmazon/OnlineSubsystemAmazon.uplugin
+LogPluginManager: Loaded Plugin OnlineSubsystemFacebook, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Online/OnlineSubsystemFacebook/OnlineSubsystemFacebook.uplugin
+LogPluginManager: Loaded Plugin OnlineSubsystemNull, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Online/OnlineSubsystemNull/OnlineSubsystemNull.uplugin
+LogPluginManager: Loaded Plugin OnlineSubsystemOculus, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Online/OnlineSubsystemOculus/OnlineSubsystemOculus.uplugin
+LogPluginManager: Loaded Plugin OnlineSubsystemSteam, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Online/OnlineSubsystemSteam/OnlineSubsystemSteam.uplugin
+LogPluginManager: Loaded Plugin OnlineSubsystemUtils, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Online/OnlineSubsystemUtils/OnlineSubsystemUtils.uplugin
+LogPluginManager: Loaded Plugin IOSTapJoy, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/Advertising/IOSTapJoy/IOSTapJoy.uplugin
+LogPluginManager: Loaded Plugin AnalyticsBlueprintLibrary, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/AnalyticsBlueprintLibrary.uplugin
+LogPluginManager: Loaded Plugin AnalyticsMulticast, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/AnalyticsMulticast.uplugin
+LogPluginManager: Loaded Plugin Apsalar, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/Analytics/Apsalar/Apsalar.uplugin
+LogPluginManager: Loaded Plugin FileLogging, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/Analytics/FileLogging/FileLogging.uplugin
+LogPluginManager: Loaded Plugin Flurry, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/Analytics/Flurry/Flurry.uplugin
+LogPluginManager: Loaded Plugin AndroidDeviceProfileSelector, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/AndroidDeviceProfileSelector/AndroidDeviceProfileSelector.uplugin
+LogPluginManager: Loaded Plugin AndroidMoviePlayer, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/AndroidMoviePlayer/AndroidMoviePlayer.uplugin
+LogPluginManager: Loaded Plugin AppleMoviePlayer, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/AppleMoviePlayer/AppleMoviePlayer.uplugin
+LogPluginManager: Loaded Plugin ArchVisCharacter, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/ArchVisCharacter/ArchVisCharacter.uplugin
+LogPluginManager: Loaded Plugin CableComponent, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/CableComponent/CableComponent.uplugin
+LogPluginManager: Loaded Plugin CustomMeshComponent, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/CustomMeshComponent/CustomMeshComponent.uplugin
+LogPluginManager: Loaded Plugin ExampleDeviceProfileSelector, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/ExampleDeviceProfileSelector/ExampleDeviceProfileSelector.uplugin
+LogPluginManager: Loaded Plugin GearVR, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/GearVR/GearVR.uplugin
+LogPluginManager: Loaded Plugin GoogleVRController, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/GoogleVR/GoogleVRController/GoogleVRController.uplugin
+LogPluginManager: Loaded Plugin GoogleVRHMD, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/GoogleVR/GoogleVRHMD/GoogleVRHMD.uplugin
+LogPluginManager: Loaded Plugin IOSDeviceProfileSelector, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/IOSDeviceProfileSelector/IOSDeviceProfileSelector.uplugin
+LogPluginManager: Loaded Plugin LeapMotion, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/LeapMotion/LeapMotion.uplugin
+LogPluginManager: Loaded Plugin LinuxDeviceProfileSelector, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/LinuxDeviceProfileSelector/LinuxDeviceProfileSelector.uplugin
+LogPluginManager: Loaded Plugin LiveEditorListenServer, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/LiveEditorListenServer/LiveEditorListenServer.uplugin
+LogPluginManager: Loaded Plugin OculusAudio, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/OculusAudio/OculusAudio.uplugin
+LogPluginManager: Loaded Plugin OculusInput, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/OculusInput/OculusInput.uplugin
+LogPluginManager: Loaded Plugin OculusLibrary, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/OculusLibrary/OculusLibrary.uplugin
+LogPluginManager: Loaded Plugin OculusRift, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/OculusRift/OculusRift.uplugin
+LogPluginManager: Loaded Plugin Oodle, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/PacketHandlers/CompressionComponents/Oodle/Oodle.uplugin
+LogPluginManager: Loaded Plugin ProceduralMeshComponent, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/ProceduralMeshComponent/ProceduralMeshComponent.uplugin
+LogPluginManager: Loaded Plugin SoundMod, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/SoundMod/SoundMod.uplugin
+LogPluginManager: Loaded Plugin SoundVisualizations, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/SoundVisualizations/SoundVisualizations.uplugin
+LogPluginManager: Loaded Plugin SteamController, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/Steam/SteamController/SteamController.uplugin
+LogPluginManager: Loaded Plugin SteamVR, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/Steam/SteamVR/SteamVR.uplugin
+LogPluginManager: Loaded Plugin WebBrowserWidget, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/WebBrowserWidget/WebBrowserWidget.uplugin
+LogPluginManager: Loaded Plugin WindowsDeviceProfileSelector, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/WindowsDeviceProfileSelector/WindowsDeviceProfileSelector.uplugin
+LogPluginManager: Loaded Plugin WindowsMoviePlayer, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Runtime/WindowsMoviePlayer/WindowsMoviePlayer.uplugin
+LogPluginManager: Loaded Plugin ScriptPlugin, From C:/Program Files/Epic Games/4.13/Engine/Plugins/ScriptPlugin/ScriptPlugin.uplugin
+LogPluginManager: Loaded Plugin SlateRemote, From C:/Program Files/Epic Games/4.13/Engine/Plugins/Slate/SlateRemote/SlateRemote.uplugin
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.13-CL-3106830
+LogInit: Engine Version: 4.13.0-3106830+++UE4+Release-4.13
+LogInit: Compatible Engine Version: 4.13.0-3106830+++UE4+Release-4.13
+LogInit: Net CL: 3106830
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 5
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 6
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 12
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 4
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Aug 30 2016 18:11:39
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.13
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files/Epic Games/4.13/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.09.14-10.44.41:600][  0]LogConsoleManager:Display: Setting the console variable 'r.RHICmdBypass' with 'SetByProjectSetting' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.09.14-10.44.41:610][  0]LogInit: Selected Device Profile: [Windows]
+[2016.09.14-10.44.41:610][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.09.14-10.44.41:621][  0]LogInit: Computer: SIMPLEDESKTOP
+[2016.09.14-10.44.41:621][  0]LogInit: User: SimpleCookie
+[2016.09.14-10.44.41:621][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.09.14-10.44.41:621][  0]LogInit: High frequency timer resolution =3.417978 MHz
+[2016.09.14-10.44.41:621][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.09.14-10.44.41:621][  0]LogMemory: Platform Memory Stats for Windows
+[2016.09.14-10.44.41:621][  0]LogMemory: Process Physical Memory: 255.79 MB used, 255.79 MB peak
+[2016.09.14-10.44.41:621][  0]LogMemory: Process Virtual Memory: 259.66 MB used, 259.66 MB peak
+[2016.09.14-10.44.41:621][  0]LogMemory: Physical Memory: 11785.86 MB used, 16327.57 MB total
+[2016.09.14-10.44.41:621][  0]LogMemory: Virtual Memory: 623.28 MB used, 134217728.00 MB total
+[2016.09.14-10.44.41:723][  0]LogTextLocalizationManager: No translations for ('sv-SE') exist, falling back to 'en' for localization and internationalization data.
+[2016.09.14-10.44.42:382][  0]LogD3D11RHI: D3D11 adapters:
+[2016.09.14-10.44.42:412][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 760' (Feature Level 11_0)
+[2016.09.14-10.44.42:412][  0]LogD3D11RHI:       1990/0/8163 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2016.09.14-10.44.42:415][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.09.14-10.44.42:415][  0]LogD3D11RHI:       0/0/8163 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2016.09.14-10.44.42:415][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.09.14-10.44.42:420][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.09.14-10.44.42:420][  0]LogD3D11RHI:     GPU DeviceId: 0x1187 (for the marketing name, search the web for "GPU Device Id")
+[2016.09.14-10.44.42:420][  0]LogWindows: EnumDisplayDevices:
+[2016.09.14-10.44.42:420][  0]LogWindows:    0. 'NVIDIA GeForce GTX 760' (P:1 D:1)
+[2016.09.14-10.44.42:420][  0]LogWindows:    1. 'NVIDIA GeForce GTX 760' (P:0 D:1)
+[2016.09.14-10.44.42:421][  0]LogWindows:    2. 'NVIDIA GeForce GTX 760' (P:0 D:0)
+[2016.09.14-10.44.42:421][  0]LogWindows:    3. 'NVIDIA GeForce GTX 760' (P:0 D:0)
+[2016.09.14-10.44.42:421][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2016.09.14-10.44.42:421][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 760
+[2016.09.14-10.44.42:421][  0]LogD3D11RHI:   Driver Version: 353.54 (internal:10.18.13.5354, unified:353.54)
+[2016.09.14-10.44.42:421][  0]LogD3D11RHI:      Driver Date: 7-13-2015
+[2016.09.14-10.44.42:421][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.09.14-10.44.42:436][  0]LogD3D11RHI: Async texture creation enabled
+[2016.09.14-10.44.42:452][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2016.09.14-10.44.42:452][  0]LogShaderCompilers: Guid format shader working directory is -30 characters bigger than the processId version (../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Intermediate/Shaders/WorkingDirectory/14396/).
+[2016.09.14-10.44.42:452][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/SIMPLE~1/AppData/Local/Temp/UnrealShaderWorkingDir/E6568C38451B2DACF5A0579DB3880F21/'.
+[2016.09.14-10.44.42:452][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.09.14-10.44.43:477][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.09.14-10.44.43:490][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.09.14-10.44.43:501][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.09.14-10.44.43:513][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.09.14-10.44.43:524][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.09.14-10.44.43:535][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.09.14-10.44.43:546][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.09.14-10.44.43:556][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.09.14-10.44.43:566][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.09.14-10.44.43:577][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.09.14-10.44.43:588][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.09.14-10.44.43:609][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.09.14-10.44.43:609][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.09.14-10.44.43:614][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.09.14-10.44.43:645][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.09.14-10.44.43:654][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.09.14-10.44.43:664][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2016.09.14-10.44.43:675][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.09.14-10.44.43:684][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.09.14-10.44.43:695][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.09.14-10.44.43:695][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.09.14-10.44.43:866][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.09.14-10.44.43:920][  0]LogDerivedDataCache: Loaded boot cache 0.05s 62MB C:/Users/SimpleCookie/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc.
+[2016.09.14-10.44.43:920][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/SimpleCookie/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc
+[2016.09.14-10.44.43:920][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.09.14-10.44.43:920][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.09.14-10.44.43:920][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.09.14-10.44.43:920][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.09.14-10.44.43:936][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.09.14-10.44.43:948][  0]LogDerivedDataCache: Using Local data cache path C:/Users/SimpleCookie/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.09.14-10.44.44:161][  0]LogInit: Selected Device Profile: [Windows]
+[2016.09.14-10.44.44:163][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.09.14-10.44.44:269][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.09.14-10.44.44:269][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.09.14-10.44.44:269][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.09.14-10.44.44:304][  0]LogMaterial: Missing cached shader map for material MatineeCam_mat, compiling. 
+[2016.09.14-10.44.44:336][  0]LogMaterial: Missing cached shader map for material M_SimpleOpaque, compiling. 
+[2016.09.14-10.44.44:353][  0]LogMaterial: Missing cached shader map for material M_SimpleTranslucent, compiling. 
+[2016.09.14-10.44.44:402][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.09.14-10.44.44:521][  0]LogMaterial: Missing cached shader map for material SkySphereMaterial, compiling. 
+[2016.09.14-10.44.44:534][  0]LogMaterial: Missing cached shader map for material FloorPlaneMaterial, compiling. 
+[2016.09.14-10.44.44:605][  0]LogMaterial: Missing cached shader map for material LandscapeGizmo_Mat, compiling. 
+[2016.09.14-10.44.44:636][  0]LogMaterial: Missing cached shader map for material LandscapeGizmoHeight_Mat, compiling. 
+[2016.09.14-10.44.44:684][  0]LogMaterial: Missing cached shader map for material SplineEditorMeshMat, compiling. 
+[2016.09.14-10.44.44:708][  0]LogMaterial: Missing cached shader map for material HelpActorMaterial, compiling. 
+[2016.09.14-10.44.44:811][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3106830, ProjectName: exploringsysops, ProjectVersion: , EngineNetworkVersion: 1, GameNetworkVersion: 0, NetworkChecksum: 748676552
+[2016.09.14-10.44.44:854][  0]LogAssetRegistry: FAssetRegistry took 0.0210 seconds to start up
+[2016.09.14-10.44.44:873][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 1 prioritized culture(s) in 0.016491 seconds
+[2016.09.14-10.44.44:878][  0]LogUObjectArray: 29777 objects as part of root set at end of initial load.
+[2016.09.14-10.44.44:878][  0]LogUObjectAllocator: 6124696 out of 0 bytes used by permanent object pool.
+[2016.09.14-10.44.44:878][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.09.14-10.44.44:899][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.09.14-10.44.45:259][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.09.14-10.44.45:259][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.09.14-10.44.45:918][  0]LogWmfMedia: Failed to load mf.dll
+[2016.09.14-10.44.45:918][  0]LogWmfMedia: Failed to load required Windows Media Foundation libraries
+[2016.09.14-10.44.45:943][  0]LogWindowsMoviePlayer: Could not load mf.dll. Library not found.
+[2016.09.14-10.44.45:947][  0]LogWindowsMoviePlayer: Could not load mfplat.dll. Library not found.
+[2016.09.14-10.44.45:953][  0]LogWindowsMoviePlayer: Could not load mfplay.dll. Library not found.
+[2016.09.14-10.44.46:088][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.09.14-10.44.46:225][  0]LogMaterial: Missing cached shader map for material BaseColor, compiling. 
+[2016.09.14-10.44.46:234][  0]LogMaterial: Missing cached shader map for material CustomDepth, compiling. 
+[2016.09.14-10.44.46:246][  0]LogMaterial: Missing cached shader map for material CustomStencil, compiling. 
+[2016.09.14-10.44.46:254][  0]LogMaterial: Missing cached shader map for material FinalImage, compiling. 
+[2016.09.14-10.44.46:262][  0]LogMaterial: Missing cached shader map for material LightingModel, compiling. 
+[2016.09.14-10.44.46:269][  0]LogMaterial: Missing cached shader map for material MaterialAO, compiling. 
+[2016.09.14-10.44.46:276][  0]LogMaterial: Missing cached shader map for material Metallic, compiling. 
+[2016.09.14-10.44.46:283][  0]LogMaterial: Missing cached shader map for material Opacity, compiling. 
+[2016.09.14-10.44.46:291][  0]LogMaterial: Missing cached shader map for material Roughness, compiling. 
+[2016.09.14-10.44.46:299][  0]LogMaterial: Missing cached shader map for material SceneColor, compiling. 
+[2016.09.14-10.44.46:307][  0]LogMaterial: Missing cached shader map for material SceneDepth, compiling. 
+[2016.09.14-10.44.46:315][  0]LogMaterial: Missing cached shader map for material SeparateTranslucencyRGB, compiling. 
+[2016.09.14-10.44.46:322][  0]LogMaterial: Missing cached shader map for material SeparateTranslucencyA, compiling. 
+[2016.09.14-10.44.46:329][  0]LogMaterial: Missing cached shader map for material Specular, compiling. 
+[2016.09.14-10.44.46:336][  0]LogMaterial: Missing cached shader map for material SubsurfaceColor, compiling. 
+[2016.09.14-10.44.46:344][  0]LogMaterial: Missing cached shader map for material WorldNormal, compiling. 
+[2016.09.14-10.44.46:352][  0]LogMaterial: Missing cached shader map for material AmbientOcclusion, compiling. 
+[2016.09.14-10.44.46:364][  0]LogMaterial: Missing cached shader map for material CustomDepthWorldUnits, compiling. 
+[2016.09.14-10.44.46:372][  0]LogMaterial: Missing cached shader map for material SceneDepthWorldUnits, compiling. 
+[2016.09.14-10.44.46:378][  0]LogMaterial: Missing cached shader map for material HDRColor, compiling. 
+[2016.09.14-10.44.46:504][  0]SourceControl: Info Source control is disabled
+[2016.09.14-10.44.46:568][  0]SourceControl: Info Source control is disabled
+[2016.09.14-10.44.46:587][  0]SourceControl: Info Source control is disabled
+[2016.09.14-10.44.46:611][  0]SourceControl: Info Source control is disabled
+[2016.09.14-10.44.47:132][  0]LogMaterial: Missing cached shader map for material HighResScreenshot, compiling. 
+[2016.09.14-10.44.47:143][  0]LogMaterial: Missing cached shader map for material HighResScreenshotMask, compiling. 
+[2016.09.14-10.44.47:155][  0]LogMaterial: Missing cached shader map for material HighResScreenshotCaptureRegion, compiling. 
+[2016.09.14-10.44.47:180][  0]LogEngine: Initializing Engine...
+[2016.09.14-10.44.47:181][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2016.09.14-10.44.47:184][  0]LogMaterial: Missing cached shader map for material WireframeMaterial, compiling. Is special engine material.
+[2016.09.14-10.44.47:347][  0]LogMaterial: Missing cached shader map for material LevelColorationLitMaterial, compiling. Is special engine material.
+[2016.09.14-10.44.47:743][  0]LogMaterial: Missing cached shader map for material LevelColorationUnlitMaterial, compiling. Is special engine material.
+[2016.09.14-10.44.47:865][  0]LogMaterial: Missing cached shader map for material MAT_LevelColorationLitLightmapUV, compiling. Is special engine material.
+[2016.09.14-10.44.48:240][  0]LogMaterial: Missing cached shader map for material ShadedLevelColorationLitMaterial, compiling. Is special engine material.
+[2016.09.14-10.44.48:616][  0]LogMaterial: Missing cached shader map for material ShadedLevelColorationUnlitMateri, compiling. Is special engine material.
+[2016.09.14-10.44.48:732][  0]LogMaterial: Missing cached shader map for material VertexColorMaterial, compiling. 
+[2016.09.14-10.44.48:764][  0]LogMaterial: Missing cached shader map for material VertexColorViewMode_ColorOnly, compiling. 
+[2016.09.14-10.44.48:773][  0]LogMaterial: Missing cached shader map for material VertexColorViewMode_AlphaAsColor, compiling. 
+[2016.09.14-10.44.48:782][  0]LogMaterial: Missing cached shader map for material VertexColorViewMode_RedOnly, compiling. 
+[2016.09.14-10.44.48:792][  0]LogMaterial: Missing cached shader map for material VertexColorViewMode_GreenOnly, compiling. 
+[2016.09.14-10.44.48:801][  0]LogMaterial: Missing cached shader map for material VertexColorViewMode_BlueOnly, compiling. 
+[2016.09.14-10.44.48:829][  0]LogMaterial: Missing cached shader map for material GeomMaterial, compiling. 
+[2016.09.14-10.44.48:838][  0]LogMaterial: Missing cached shader map for material EditorBrushMaterial, compiling. 
+[2016.09.14-10.44.48:849][  0]LogMaterial: Missing cached shader map for material BoneWeightMaterial, compiling. 
+[2016.09.14-10.44.48:902][  0]LogMaterial: Missing cached shader map for material PreviewShadowIndicatorMaterial, compiling. 
+[2016.09.14-10.44.48:939][  0]LogAIModule: Creating AISystem for world Untitled
+[2016.09.14-10.44.48:958][  0]LogInit: XAudio2 using 'Högtalare (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.14-10.44.48:992][  0]LogInit: FAudioDevice initialized.
+[2016.09.14-10.44.49:026][  0]LogDerivedDataCache: Saved boot cache 0.03s 73MB C:/Users/SimpleCookie/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc.
+[2016.09.14-10.44.49:035][  0]LogInit: Texture streaming: Enabled
+[2016.09.14-10.44.49:090][  0]LogInit: Transaction tracking system initialized
+[2016.09.14-10.44.49:141][  0]BlueprintLog: New page: Editor Load
+[2016.09.14-10.44.49:324][  0]LocalizationService: Info Localization service is disabled
+[2016.09.14-10.44.49:501][  0]LogConsoleResponse:Display: 
+[2016.09.14-10.44.49:512][  0]LogMaterial: Missing cached shader map for material Cross_Mat, compiling. 
+[2016.09.14-10.44.49:525][  0]LogMaterial: Missing cached shader map for material PhAT_BoneSelectedMaterial, compiling. 
+[2016.09.14-10.44.49:533][  0]LogMaterial: Missing cached shader map for material PhAT_ElemSelectedMaterial, compiling. 
+[2016.09.14-10.44.49:543][  0]LogMaterial: Missing cached shader map for material PhAT_NoCollisionMaterial, compiling. 
+[2016.09.14-10.44.49:552][  0]LogMaterial: Missing cached shader map for material PhAT_UnselectedMaterial, compiling. 
+[2016.09.14-10.44.49:562][  0]LogMaterial: Missing cached shader map for material Tick_Mat, compiling. 
+[2016.09.14-10.44.49:577][  0]LogMaterial: Missing cached shader map for material WidgetGridVertexColorMaterial_Ma, compiling. 
+[2016.09.14-10.44.49:601][  0]LogMaterial: Missing cached shader map for material WidgetMaterial, compiling. 
+[2016.09.14-10.44.49:612][  0]LogMaterial: Missing cached shader map for material WidgetMaterial_Current, compiling. 
+[2016.09.14-10.44.49:621][  0]LogMaterial: Missing cached shader map for material WidgetMaterial_X, compiling. 
+[2016.09.14-10.44.49:646][  0]LogMaterial: Missing cached shader map for material WidgetMaterial_Y, compiling. 
+[2016.09.14-10.44.49:656][  0]LogMaterial: Missing cached shader map for material WidgetMaterial_Z, compiling. 
+[2016.09.14-10.44.49:665][  0]LogMaterial: Missing cached shader map for material WidgetVertexColorMaterial, compiling. 
+[2016.09.14-10.44.49:691][  0]LogMaterial: Missing cached shader map for material LevelGridMaterial, compiling. 
+[2016.09.14-10.44.49:722][  0]LogMaterial: Missing cached shader map for material BlinkingCaret, compiling. 
+[2016.09.14-10.44.49:746][  0]LogMaterial: Missing cached shader map for material M_StreamingPause, compiling. 
+[2016.09.14-10.44.49:765][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2016.09.14-10.44.49:765][  0]LogCook:Display: Mobile HDR setting 1
+[2016.09.14-10.44.50:135][  0]LogFileCache: Scanning file cache for directory 'C:/Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/' took 0.01s
+[2016.09.14-10.44.50:135][  0]SourceControl: Info Source control is disabled
+[2016.09.14-10.44.50:136][  0]LogFactory: FactoryCreateFile: PackFactory with PackFactory (0 0 C:/Program Files/Epic Games/4.13/FeaturePacks/StarterContent.upack)
+[2016.09.14-10.44.50:153][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
+[2016.09.14-10.44.50:163][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Floor_400x400.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Architecture/Floor_400x400.uasset"
+[2016.09.14-10.44.50:171][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Pillar_50x500.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Architecture/Pillar_50x500.uasset"
+[2016.09.14-10.44.50:181][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/SM_AssetPlatform.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Architecture/SM_AssetPlatform.uasset"
+[2016.09.14-10.44.50:188][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x200.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Architecture/Wall_400x200.uasset"
+[2016.09.14-10.44.50:197][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x300.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Architecture/Wall_400x300.uasset"
+[2016.09.14-10.44.50:205][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x400.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Architecture/Wall_400x400.uasset"
+[2016.09.14-10.44.50:213][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_500x500.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Architecture/Wall_500x500.uasset"
+[2016.09.14-10.44.50:220][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x300.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Architecture/Wall_Door_400x300.uasset"
+[2016.09.14-10.44.50:230][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x400.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Architecture/Wall_Door_400x400.uasset"
+[2016.09.14-10.44.50:238][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x300.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Architecture/Wall_Window_400x300.uasset"
+[2016.09.14-10.44.50:246][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x400.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Architecture/Wall_Window_400x400.uasset"
+[2016.09.14-10.44.50:253][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse01.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Collapse01.uasset"
+[2016.09.14-10.44.50:262][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse02.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Collapse02.uasset"
+[2016.09.14-10.44.50:267][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse_Cue.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Collapse_Cue.uasset"
+[2016.09.14-10.44.50:274][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion01.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Explosion01.uasset"
+[2016.09.14-10.44.50:283][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion02.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Explosion02.uasset"
+[2016.09.14-10.44.50:288][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion_Cue.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Explosion_Cue.uasset"
+[2016.09.14-10.44.50:297][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Fire01.uasset"
+[2016.09.14-10.44.50:301][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01_Cue.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Fire01_Cue.uasset"
+[2016.09.14-10.44.50:311][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Fire_Sparks01.uasset"
+[2016.09.14-10.44.50:315][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset"
+[2016.09.14-10.44.50:325][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Light01.uasset"
+[2016.09.14-10.44.50:329][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01_Cue.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Light01_Cue.uasset"
+[2016.09.14-10.44.50:338][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Light02.uasset"
+[2016.09.14-10.44.50:342][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02_Cue.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Light02_Cue.uasset"
+[2016.09.14-10.44.50:353][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Smoke01.uasset"
+[2016.09.14-10.44.50:357][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01_Cue.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Smoke01_Cue.uasset"
+[2016.09.14-10.44.50:370][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Background_Cue.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Starter_Background_Cue.uasset"
+[2016.09.14-10.44.50:385][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Birds01.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Starter_Birds01.uasset"
+[2016.09.14-10.44.50:418][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music01.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Starter_Music01.uasset"
+[2016.09.14-10.44.50:428][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music_Cue.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Starter_Music_Cue.uasset"
+[2016.09.14-10.44.50:445][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind05.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Starter_Wind05.uasset"
+[2016.09.14-10.44.50:463][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind06.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Starter_Wind06.uasset"
+[2016.09.14-10.44.50:474][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Steam01.uasset"
+[2016.09.14-10.44.50:479][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01_Cue.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Audio/Steam01_Cue.uasset"
+[2016.09.14-10.44.50:489][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset"
+[2016.09.14-10.44.50:498][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
+[2016.09.14-10.44.50:506][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
+[2016.09.14-10.44.50:545][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
+[2016.09.14-10.44.50:552][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
+[2016.09.14-10.44.50:558][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset"
+[2016.09.14-10.44.50:566][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset"
+[2016.09.14-10.44.50:573][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/BP_LightStudio.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Blueprints/BP_LightStudio.uasset"
+[2016.09.14-10.44.50:578][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset"
+[2016.09.14-10.44.50:584][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset"
+[2016.09.14-10.44.50:592][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset"
+[2016.09.14-10.44.50:599][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset"
+[2016.09.14-10.44.50:606][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset"
+[2016.09.14-10.44.50:614][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/Skybox.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Blueprints/Assets/Skybox.uasset"
+[2016.09.14-10.44.50:624][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset"
+[2016.09.14-10.44.50:628][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset"
+[2016.09.14-10.44.50:837][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
+[2016.09.14-10.44.50:845][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting.umap" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Maps/Advanced_Lighting.umap"
+[2016.09.14-10.44.50:856][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default.umap" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Maps/Minimal_Default.umap"
+[2016.09.14-10.44.50:903][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap.umap" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Maps/StarterMap.umap"
+[2016.09.14-10.44.50:911][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_AssetPlatform.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_AssetPlatform.uasset"
+[2016.09.14-10.44.50:920][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Floor.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Basic_Floor.uasset"
+[2016.09.14-10.44.50:928][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Wall.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Basic_Wall.uasset"
+[2016.09.14-10.44.50:936][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset"
+[2016.09.14-10.44.50:943][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Brick_Clay_New.uasset"
+[2016.09.14-10.44.50:950][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset"
+[2016.09.14-10.44.50:957][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset"
+[2016.09.14-10.44.50:965][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset"
+[2016.09.14-10.44.50:972][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
+[2016.09.14-10.44.50:980][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset"
+[2016.09.14-10.44.50:987][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset"
+[2016.09.14-10.44.50:995][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset"
+[2016.09.14-10.44.51:003][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset"
+[2016.09.14-10.44.51:011][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Grime.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Concrete_Grime.uasset"
+[2016.09.14-10.44.51:018][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Panels.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Concrete_Panels.uasset"
+[2016.09.14-10.44.51:025][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Poured.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Concrete_Poured.uasset"
+[2016.09.14-10.44.51:033][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Concrete_Tiles.uasset"
+[2016.09.14-10.44.51:041][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Glass.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Glass.uasset"
+[2016.09.14-10.44.51:048][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Grass.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Ground_Grass.uasset"
+[2016.09.14-10.44.51:055][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Gravel.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Ground_Gravel.uasset"
+[2016.09.14-10.44.51:062][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Moss.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Ground_Moss.uasset"
+[2016.09.14-10.44.51:069][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
+[2016.09.14-10.44.51:076][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset"
+[2016.09.14-10.44.51:083][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Chrome.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Metal_Chrome.uasset"
+[2016.09.14-10.44.51:090][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Copper.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Metal_Copper.uasset"
+[2016.09.14-10.44.51:097][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Gold.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Metal_Gold.uasset"
+[2016.09.14-10.44.51:104][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Rust.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Metal_Rust.uasset"
+[2016.09.14-10.44.51:111][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Steel.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Metal_Steel.uasset"
+[2016.09.14-10.44.51:118][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Basalt.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Rock_Basalt.uasset"
+[2016.09.14-10.44.51:125][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset"
+[2016.09.14-10.44.51:132][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Rock_Sandstone.uasset"
+[2016.09.14-10.44.51:139][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Slate.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Rock_Slate.uasset"
+[2016.09.14-10.44.51:147][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset"
+[2016.09.14-10.44.51:154][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset"
+[2016.09.14-10.44.51:161][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
+[2016.09.14-10.44.51:168][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Panel.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Tech_Panel.uasset"
+[2016.09.14-10.44.51:175][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Lake.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Water_Lake.uasset"
+[2016.09.14-10.44.51:182][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Ocean.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Water_Ocean.uasset"
+[2016.09.14-10.44.51:189][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
+[2016.09.14-10.44.51:196][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
+[2016.09.14-10.44.51:204][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Oak.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Wood_Oak.uasset"
+[2016.09.14-10.44.51:211][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Pine.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Wood_Pine.uasset"
+[2016.09.14-10.44.51:218][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Walnut.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Materials/M_Wood_Walnut.uasset"
+[2016.09.14-10.44.51:225][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Ambient_Dust.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Particles/P_Ambient_Dust.uasset"
+[2016.09.14-10.44.51:233][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Explosion.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Particles/P_Explosion.uasset"
+[2016.09.14-10.44.51:240][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Fire.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Particles/P_Fire.uasset"
+[2016.09.14-10.44.51:248][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Smoke.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Particles/P_Smoke.uasset"
+[2016.09.14-10.44.51:255][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Sparks.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Particles/P_Sparks.uasset"
+[2016.09.14-10.44.51:262][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Steam_Lit.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Particles/P_Steam_Lit.uasset"
+[2016.09.14-10.44.51:270][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Burst.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Particles/Materials/M_Burst.uasset"
+[2016.09.14-10.44.51:277][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset"
+[2016.09.14-10.44.51:285][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset"
+[2016.09.14-10.44.51:292][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset"
+[2016.09.14-10.44.51:299][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/m_flare_01.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Particles/Materials/m_flare_01.uasset"
+[2016.09.14-10.44.51:306][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset"
+[2016.09.14-10.44.51:314][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset"
+[2016.09.14-10.44.51:322][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset"
+[2016.09.14-10.44.51:329][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset"
+[2016.09.14-10.44.51:337][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Spark.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Particles/Materials/M_Spark.uasset"
+[2016.09.14-10.44.51:345][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/MaterialSphere.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/MaterialSphere.uasset"
+[2016.09.14-10.44.51:354][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Bush.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/SM_Bush.uasset"
+[2016.09.14-10.44.51:362][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Chair.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/SM_Chair.uasset"
+[2016.09.14-10.44.51:370][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_CornerFrame.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/SM_CornerFrame.uasset"
+[2016.09.14-10.44.51:378][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Couch.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/SM_Couch.uasset"
+[2016.09.14-10.44.51:385][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Door.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/SM_Door.uasset"
+[2016.09.14-10.44.51:393][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_DoorFrame.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/SM_DoorFrame.uasset"
+[2016.09.14-10.44.51:401][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_GlassWindow.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/SM_GlassWindow.uasset"
+[2016.09.14-10.44.51:408][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset"
+[2016.09.14-10.44.51:416][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Wall.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/SM_Lamp_Wall.uasset"
+[2016.09.14-10.44.51:429][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset"
+[2016.09.14-10.44.51:436][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/SM_PillarFrame.uasset"
+[2016.09.14-10.44.51:443][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame300.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/SM_PillarFrame300.uasset"
+[2016.09.14-10.44.51:450][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Rock.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/SM_Rock.uasset"
+[2016.09.14-10.44.51:457][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Shelf.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/SM_Shelf.uasset"
+[2016.09.14-10.44.51:464][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Stairs.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/SM_Stairs.uasset"
+[2016.09.14-10.44.51:472][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Statue.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/SM_Statue.uasset"
+[2016.09.14-10.44.51:480][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_TableRound.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/SM_TableRound.uasset"
+[2016.09.14-10.44.51:488][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_WindowFrame.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/SM_WindowFrame.uasset"
+[2016.09.14-10.44.51:495][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Bush.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/Materials/M_Bush.uasset"
+[2016.09.14-10.44.51:502][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Chair.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/Materials/M_Chair.uasset"
+[2016.09.14-10.44.51:509][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Door.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/Materials/M_Door.uasset"
+[2016.09.14-10.44.51:516][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Frame.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/Materials/M_Frame.uasset"
+[2016.09.14-10.44.51:523][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Lamp.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/Materials/M_Lamp.uasset"
+[2016.09.14-10.44.51:531][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset"
+[2016.09.14-10.44.51:539][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset"
+[2016.09.14-10.44.51:546][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Rock.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/Materials/M_Rock.uasset"
+[2016.09.14-10.44.51:553][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Shelf.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/Materials/M_Shelf.uasset"
+[2016.09.14-10.44.51:560][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Statue.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/Materials/M_Statue.uasset"
+[2016.09.14-10.44.51:575][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_StatueGlass.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/Materials/M_StatueGlass.uasset"
+[2016.09.14-10.44.51:582][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_TableRound.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Props/Materials/M_TableRound.uasset"
+[2016.09.14-10.44.51:589][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cone.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Shapes/Shape_Cone.uasset"
+[2016.09.14-10.44.51:597][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cube.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Shapes/Shape_Cube.uasset"
+[2016.09.14-10.44.51:604][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cylinder.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Shapes/Shape_Cylinder.uasset"
+[2016.09.14-10.44.51:612][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset"
+[2016.09.14-10.44.51:620][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Shapes/Shape_Pipe.uasset"
+[2016.09.14-10.44.51:627][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_180.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Shapes/Shape_Pipe_180.uasset"
+[2016.09.14-10.44.51:634][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_90.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Shapes/Shape_Pipe_90.uasset"
+[2016.09.14-10.44.51:641][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Plane.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Shapes/Shape_Plane.uasset"
+[2016.09.14-10.44.51:648][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset"
+[2016.09.14-10.44.51:656][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Sphere.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Shapes/Shape_Sphere.uasset"
+[2016.09.14-10.44.51:664][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Torus.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Shapes/Shape_Torus.uasset"
+[2016.09.14-10.44.51:672][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Shapes/Shape_Trim.uasset"
+[2016.09.14-10.44.51:679][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset"
+[2016.09.14-10.44.51:688][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset"
+[2016.09.14-10.44.51:695][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_TriPyramid.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Shapes/Shape_TriPyramid.uasset"
+[2016.09.14-10.44.51:703][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Tube.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Shapes/Shape_Tube.uasset"
+[2016.09.14-10.44.51:711][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_A.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Shapes/Shape_Wedge_A.uasset"
+[2016.09.14-10.44.51:718][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_B.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Shapes/Shape_Wedge_B.uasset"
+[2016.09.14-10.44.51:727][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_WideCapsule.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Shapes/Shape_WideCapsule.uasset"
+[2016.09.14-10.44.51:760][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset"
+[2016.09.14-10.44.51:818][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset"
+[2016.09.14-10.44.51:847][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset"
+[2016.09.14-10.44.51:880][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset"
+[2016.09.14-10.44.51:911][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset"
+[2016.09.14-10.44.51:938][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset"
+[2016.09.14-10.44.51:973][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset"
+[2016.09.14-10.44.52:001][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset"
+[2016.09.14-10.44.52:054][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset"
+[2016.09.14-10.44.52:079][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset"
+[2016.09.14-10.44.52:105][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset"
+[2016.09.14-10.44.52:129][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset"
+[2016.09.14-10.44.52:158][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset"
+[2016.09.14-10.44.52:166][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Burst_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Burst_M.uasset"
+[2016.09.14-10.44.52:175][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Bush_D.uasset"
+[2016.09.14-10.44.52:183][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Bush_N.uasset"
+[2016.09.14-10.44.52:192][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset"
+[2016.09.14-10.44.52:200][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset"
+[2016.09.14-10.44.52:209][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Chair_M.uasset"
+[2016.09.14-10.44.52:221][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Chair_N.uasset"
+[2016.09.14-10.44.52:229][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Checker_Noise_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Checker_Noise_M.uasset"
+[2016.09.14-10.44.52:265][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset"
+[2016.09.14-10.44.52:277][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset"
+[2016.09.14-10.44.52:311][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset"
+[2016.09.14-10.44.52:326][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset"
+[2016.09.14-10.44.52:341][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset"
+[2016.09.14-10.44.52:365][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset"
+[2016.09.14-10.44.52:387][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset"
+[2016.09.14-10.44.52:415][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset"
+[2016.09.14-10.44.52:449][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset"
+[2016.09.14-10.44.52:480][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset"
+[2016.09.14-10.44.52:508][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset"
+[2016.09.14-10.44.52:544][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset"
+[2016.09.14-10.44.52:577][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset"
+[2016.09.14-10.44.52:602][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset"
+[2016.09.14-10.44.52:625][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset"
+[2016.09.14-10.44.52:653][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset"
+[2016.09.14-10.44.52:658][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset"
+[2016.09.14-10.44.52:674][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset"
+[2016.09.14-10.44.52:682][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Door_M.uasset"
+[2016.09.14-10.44.52:694][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Door_N.uasset"
+[2016.09.14-10.44.52:702][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Dust_Particle_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Dust_Particle_D.uasset"
+[2016.09.14-10.44.52:717][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Explosion_SubUV.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Explosion_SubUV.uasset"
+[2016.09.14-10.44.52:725][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_SubUV.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Fire_SubUV.uasset"
+[2016.09.14-10.44.52:733][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset"
+[2016.09.14-10.44.52:741][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Frame_M.uasset"
+[2016.09.14-10.44.52:753][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Frame_N.uasset"
+[2016.09.14-10.44.52:758][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Gradinet_01.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Gradinet_01.uasset"
+[2016.09.14-10.44.52:793][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Ground_Grass_D.uasset"
+[2016.09.14-10.44.52:830][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Ground_Grass_N.uasset"
+[2016.09.14-10.44.52:863][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset"
+[2016.09.14-10.44.52:888][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset"
+[2016.09.14-10.44.52:927][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_ground_Moss_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_ground_Moss_D.uasset"
+[2016.09.14-10.44.52:954][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Moss_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Ground_Moss_N.uasset"
+[2016.09.14-10.44.52:963][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Lamp_M.uasset"
+[2016.09.14-10.44.52:976][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Lamp_N.uasset"
+[2016.09.14-10.44.53:008][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_MacroVariation.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_MacroVariation.uasset"
+[2016.09.14-10.44.53:038][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset"
+[2016.09.14-10.44.53:066][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Copper_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Metal_Copper_D.uasset"
+[2016.09.14-10.44.53:110][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Metal_Gold_D.uasset"
+[2016.09.14-10.44.53:129][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Metal_Gold_N.uasset"
+[2016.09.14-10.44.53:168][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Metal_Rust_D.uasset"
+[2016.09.14-10.44.53:197][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Metal_Rust_N.uasset"
+[2016.09.14-10.44.53:263][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Metal_Steel_D.uasset"
+[2016.09.14-10.44.53:312][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Metal_Steel_N.uasset"
+[2016.09.14-10.44.53:371][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset"
+[2016.09.14-10.44.53:445][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_RockMesh_M.uasset"
+[2016.09.14-10.44.53:536][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_RockMesh_N.uasset"
+[2016.09.14-10.44.53:602][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset"
+[2016.09.14-10.44.53:676][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset"
+[2016.09.14-10.44.53:710][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset"
+[2016.09.14-10.44.53:740][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset"
+[2016.09.14-10.44.53:769][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset"
+[2016.09.14-10.44.53:811][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Rock_Slate_D.uasset"
+[2016.09.14-10.44.53:840][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Rock_Slate_N.uasset"
+[2016.09.14-10.44.53:869][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset"
+[2016.09.14-10.44.53:896][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Shelf_M.uasset"
+[2016.09.14-10.44.53:907][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Shelf_N.uasset"
+[2016.09.14-10.44.53:912][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Single_Tile_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Single_Tile_N.uasset"
+[2016.09.14-10.44.53:926][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_SubUV.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Smoke_SubUV.uasset"
+[2016.09.14-10.44.53:934][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset"
+[2016.09.14-10.44.53:942][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Spark_Core.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Spark_Core.uasset"
+[2016.09.14-10.44.53:951][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Statue_M.uasset"
+[2016.09.14-10.44.53:960][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Statue_N.uasset"
+[2016.09.14-10.44.53:969][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_TableRound_M.uasset"
+[2016.09.14-10.44.53:980][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_TableRound_N.uasset"
+[2016.09.14-10.44.53:987][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Tech_Dot_M.uasset"
+[2016.09.14-10.44.53:995][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Tech_Dot_N.uasset"
+[2016.09.14-10.44.54:004][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset"
+[2016.09.14-10.44.54:012][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset"
+[2016.09.14-10.44.54:022][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Tech_Panel_M.uasset"
+[2016.09.14-10.44.54:034][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Tech_Panel_N.uasset"
+[2016.09.14-10.44.54:046][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Water_M.uasset"
+[2016.09.14-10.44.54:060][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Water_N.uasset"
+[2016.09.14-10.44.54:110][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset"
+[2016.09.14-10.44.54:127][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset"
+[2016.09.14-10.44.54:141][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset"
+[2016.09.14-10.44.54:164][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Wood_Oak_D.uasset"
+[2016.09.14-10.44.54:186][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Wood_Oak_N.uasset"
+[2016.09.14-10.44.54:216][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Wood_Pine_D.uasset"
+[2016.09.14-10.44.54:232][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Wood_Pine_N.uasset"
+[2016.09.14-10.44.54:254][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset"
+[2016.09.14-10.44.54:271][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset" to "../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset"
+[2016.09.14-10.44.54:275][  0]LogMaterial: Missing cached shader map for material M_Basic_Floor, compiling. 
+[2016.09.14-10.44.54:365][  0]LogRenderer: Reallocating scene render targets to support 256x256 (Frame:2).
+[2016.09.14-10.44.54:589][  0]LogSavePackage: Save=40.53ms
+[2016.09.14-10.44.54:589][  0]LogSavePackage: Moving '../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Saved/Floor_400x400E4B190744DA1FC25054995B9BE9F238D.tmp' to '../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Architecture/Floor_400x400.uasset'
+[2016.09.14-10.44.54:596][  0]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/StarterContent/Architecture/Floor_400x400.uasset
+[2016.09.14-10.44.54:597][  0]LogFeaturePack:Warning: Inserted 1 feature packs
+[2016.09.14-10.44.54:600][  0]Cmd: MAP LOAD FILE="../../../../../../Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/VirtualRealityBP/Maps/StartupMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.09.14-10.44.54:601][  0]LightingResults: New page: Lighting Build
+[2016.09.14-10.44.54:604][  0]MapCheck: New page: Map Check
+[2016.09.14-10.44.54:604][  0]LightingResults: New page: Lighting Build
+[2016.09.14-10.44.54:688][  0]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT)
+[2016.09.14-10.44.54:738][  0]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1)
+[2016.09.14-10.44.54:771][  0]LogTexture:Display: Building textures: SkyOcclusion0_1 (AutoDXT)
+[2016.09.14-10.44.54:813][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_10 (BGRA8)
+[2016.09.14-10.44.54:999][  0]LogTexture:Display: Building textures: UE4_Mannequin__normals (BC5)
+[2016.09.14-10.44.55:600][  0]LogTexture:Display: Building textures: UE4_Mannequin_MAT_MASKA (AutoDXT)
+[2016.09.14-10.44.55:743][  0]LogAIModule: Creating AISystem for world StartupMap
+[2016.09.14-10.44.55:756][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.09.14-10.44.55:757][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.09.14-10.44.55:863][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 106.173ms to complete.
+[2016.09.14-10.44.55:863][  0]LogFileHelpers: Loading map 'StartupMap' took 1.263
+[2016.09.14-10.44.56:038][  0]LogCollectionManager: Loaded 0 collections in 0.002185 seconds
+[2016.09.14-10.44.56:087][  0]LogFileCache: Scanning file cache for directory 'C:/Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Saved/Collections/' took 0.01s
+[2016.09.14-10.44.56:087][  0]LogFileCache: Scanning file cache for directory 'C:/Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/Developers/SimpleCookie/Collections/' took 0.01s
+[2016.09.14-10.44.56:087][  0]LogFileCache: Scanning file cache for directory 'C:/Users/SimpleCookie/Documents/Unreal Projects/ExploringSysOps/Content/Collections/' took 0.01s
+[2016.09.14-10.44.56:087][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.09.14-10.44.56:094][  0]LogContentBrowser: Native class hierarchy populated in 0.0073 seconds. Added 2141 classes and 415 folders.
+[2016.09.14-10.44.56:098][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.09.14-10.44.56:098][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.09.14-10.44.56:099][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0007 seconds. Added 12 classes and 0 folders.
+[2016.09.14-10.44.56:105][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2016.09.14-10.44.56:172][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2016.09.14-10.44.56:220][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2016.09.14-10.44.56:238][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.09.14-10.44.56:242][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.09.14-10.44.56:273][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2016.09.14-10.44.56:273][  0]LogLoad: (Engine Initialization) Total time: 15.75 seconds
+[2016.09.14-10.44.56:273][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.01 seconds
+[2016.09.14-10.44.56:273][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.09.14-10.44.56:273][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.09.14-10.44.56:282][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.09.14-10.44.56:282][  0]LogOcInput: OculusInput pre-init called
+[2016.09.14-10.44.56:408][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.09.14-10.44.56:540][  0]LogMaterial: Missing cached shader map for material LevelGridMaterial2, compiling. 
+[2016.09.14-10.44.56:603][  0]LogRenderer: Reallocating scene render targets to support 1576x924 (Frame:3).
+[2016.09.14-10.44.56:747][  1]LogAssetRegistry: Asset discovery search completed in 11.9152 seconds
+[2016.09.14-10.44.56:747][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.09.14-10.44.56:747][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000018 seconds (updated 0 objects)
+[2016.09.14-10.45.34:025][191]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.14-10.45.34:032][191]PIE: New page: PIE session: StartupMap (Sep 14, 2016, 1:45:34 PM)
+[2016.09.14-10.45.34:032][191]LogPlayLevel: Creating play world package: /Game/VirtualRealityBP/Maps/UEDPIE_0_StartupMap
+[2016.09.14-10.45.34:036][191]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003924s)
+[2016.09.14-10.45.34:036][191]LogAIModule: Creating AISystem for world StartupMap
+[2016.09.14-10.45.34:037][191]LogPlayLevel: PIE: World Init took: (0.000747s)
+[2016.09.14-10.45.34:037][191]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VirtualRealityBP/Maps/StartupMap.StartupMap to /Game/VirtualRealityBP/Maps/UEDPIE_0_StartupMap.StartupMap (0.004856s)
+[2016.09.14-10.45.34:052][191]LogInit: XAudio2 using 'Högtalare (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.14-10.45.34:066][191]LogInit: FAudioDevice initialized.
+[2016.09.14-10.45.34:114][191]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.09.14-10.45.34:114][191]LogWorld: Game class is 'GameMode'
+[2016.09.14-10.45.34:125][191]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_StartupMap.StartupMap up for play (max tick rate 0) at 2016.09.14-12.45.34
+[2016.09.14-10.45.34:126][191]LogWorld: Bringing up level for play took: 0.010751
+[2016.09.14-10.45.34:135][191]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0006 seconds. Added 11 classes and 0 folders.
+[2016.09.14-10.45.34:135][191]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2016.09.14-10.45.34:135][191]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2016.09.14-10.45.34:135][191]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2016.09.14-10.45.34:137][191]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2016.09.14-10.45.34:138][191]PIE: Info Play in editor start time for /Game/VirtualRealityBP/Maps/UEDPIE_0_StartupMap -0.74
+[2016.09.14-10.46.23:977][237]LogSynthBenchmark:Display: FSynthBenchmark (V0.95):  requested WorkScale=1.00
+[2016.09.14-10.46.23:977][237]LogSynthBenchmark:Display: ===============
+[2016.09.14-10.46.23:978][237]LogSynthBenchmark:Display: Main Processor:
+[2016.09.14-10.46.24:016][237]LogSynthBenchmark:Display:          ... 0.018397 s/Run 'RayIntersect'
+[2016.09.14-10.46.24:016][237]LogSynthBenchmark:Display:          ... 0.019921 s/Run 'Fractal'
+[2016.09.14-10.46.24:016][237]LogSynthBenchmark:Display: 
+[2016.09.14-10.46.24:016][237]LogSynthBenchmark:Display:   CompiledTarget_x_Bits: 64
+[2016.09.14-10.46.24:016][237]LogSynthBenchmark:Display:   UE_BUILD_SHIPPING: 0
+[2016.09.14-10.46.24:016][237]LogSynthBenchmark:Display:   UE_BUILD_TEST: 0
+[2016.09.14-10.46.24:016][237]LogSynthBenchmark:Display:   UE_BUILD_DEBUG: 0
+[2016.09.14-10.46.24:016][237]LogSynthBenchmark:Display:   TotalPhysicalGBRam: 16
+[2016.09.14-10.46.24:016][237]LogSynthBenchmark:Display:   NumberOfCores (physical): 4
+[2016.09.14-10.46.24:016][237]LogSynthBenchmark:Display:   NumberOfCores (logical): 4
+[2016.09.14-10.46.24:016][237]LogSynthBenchmark:Display:   CPU Perf Index 0: 139.2 (weight 1.00)
+[2016.09.14-10.46.24:016][237]LogSynthBenchmark:Display:   CPU Perf Index 1: 143.6 (weight 1.50)
+[2016.09.14-10.46.24:016][237]LogSynthBenchmark:Display:  
+[2016.09.14-10.46.24:016][237]LogSynthBenchmark:Display: Graphics:
+[2016.09.14-10.46.24:016][237]LogSynthBenchmark:Display:   Adapter Name: 'NVIDIA GeForce GTX 760'
+[2016.09.14-10.46.24:016][237]LogSynthBenchmark:Display:   (On Optimus the name might be wrong, memory should be ok)
+[2016.09.14-10.46.24:016][237]LogSynthBenchmark:Display:   Vendor Id: 0x10de
+[2016.09.14-10.46.24:016][237]LogSynthBenchmark:Display:   Device Id: 0x1187
+[2016.09.14-10.46.24:016][237]LogSynthBenchmark:Display:   GPU Memory: 1991/0/8164 MB
+[2016.09.14-10.46.24:941][237]LogSynthBenchmark:Display:   GPU first test: 0.00s
+[2016.09.14-10.46.24:941][237]LogSynthBenchmark:Display:          ... 1.992 GigaPix/s, Confidence=100% 'ALUHeavyNoise' (likely to be very inaccurate)
+[2016.09.14-10.46.24:941][237]LogSynthBenchmark:Display:          ... 2.479 GigaPix/s, Confidence=89% 'TexHeavy' (likely to be very inaccurate)
+[2016.09.14-10.46.24:941][237]LogSynthBenchmark:Display:          ... 1.742 GigaPix/s, Confidence=100% 'DepTexHeavy' (likely to be very inaccurate)
+[2016.09.14-10.46.24:941][237]LogSynthBenchmark:Display:          ... 3.920 GigaPix/s, Confidence=89% 'FillOnly' (likely to be very inaccurate)
+[2016.09.14-10.46.24:941][237]LogSynthBenchmark:Display:          ... 0.713 GigaPix/s, Confidence=100% 'Bandwidth' (likely to be very inaccurate)
+[2016.09.14-10.46.24:961][237]LogSynthBenchmark:Display:   GPU second test: 0.02s
+[2016.09.14-10.46.24:961][237]LogSynthBenchmark:Display:          ... 3.654 GigaPix/s, Confidence=100% 'ALUHeavyNoise' (likely to be inaccurate)
+[2016.09.14-10.46.24:961][237]LogSynthBenchmark:Display:          ... 5.650 GigaPix/s, Confidence=100% 'TexHeavy' (likely to be inaccurate)
+[2016.09.14-10.46.24:961][237]LogSynthBenchmark:Display:          ... 2.974 GigaPix/s, Confidence=100% 'DepTexHeavy' (likely to be inaccurate)
+[2016.09.14-10.46.24:961][237]LogSynthBenchmark:Display:          ... 14.190 GigaPix/s, Confidence=100% 'FillOnly' (likely to be inaccurate)
+[2016.09.14-10.46.24:961][237]LogSynthBenchmark:Display:          ... 0.864 GigaPix/s, Confidence=100% 'Bandwidth' (likely to be inaccurate)
+[2016.09.14-10.46.25:127][237]LogSynthBenchmark:Display:   GPU third test: 0.15s
+[2016.09.14-10.46.25:127][237]LogSynthBenchmark:Display:          ... 3.954 GigaPix/s, Confidence=100% 'ALUHeavyNoise'
+[2016.09.14-10.46.25:127][237]LogSynthBenchmark:Display:          ... 6.538 GigaPix/s, Confidence=100% 'TexHeavy'
+[2016.09.14-10.46.25:127][237]LogSynthBenchmark:Display:          ... 3.378 GigaPix/s, Confidence=100% 'DepTexHeavy'
+[2016.09.14-10.46.25:127][237]LogSynthBenchmark:Display:          ... 20.880 GigaPix/s, Confidence=100% 'FillOnly'
+[2016.09.14-10.46.25:127][237]LogSynthBenchmark:Display:          ... 0.883 GigaPix/s, Confidence=100% 'Bandwidth'
+[2016.09.14-10.46.25:127][237]LogSynthBenchmark:Display: 
+[2016.09.14-10.46.25:127][237]LogSynthBenchmark:Display:   GPU Perf Index 0: 85.9 (weight 1.00)
+[2016.09.14-10.46.25:127][237]LogSynthBenchmark:Display:   GPU Perf Index 1: 87.8 (weight 0.10)
+[2016.09.14-10.46.25:128][237]LogSynthBenchmark:Display:   GPU Perf Index 2: 87.8 (weight 0.10)
+[2016.09.14-10.46.25:128][237]LogSynthBenchmark:Display:   GPU Perf Index 3: 82.0 (weight 3.00)
+[2016.09.14-10.46.25:128][237]LogSynthBenchmark:Display:   GPU Perf Index 4: 82.4 (weight 1.00)
+[2016.09.14-10.46.25:128][237]LogSynthBenchmark:Display:   CPUIndex: 141.8
+[2016.09.14-10.46.25:128][237]LogSynthBenchmark:Display:   GPUIndex: 83.0
+[2016.09.14-10.46.25:128][237]LogSynthBenchmark:Display: 
+[2016.09.14-10.46.25:128][237]LogSynthBenchmark:Display:          ... Total Time: 1.150182 sec
+[2016.09.14-10.46.25:131][237]LogContentStreaming: Texture pool size now 800 MB
+[2016.09.14-10.
