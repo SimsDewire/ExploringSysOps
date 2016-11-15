@@ -60,6 +60,18 @@ function main() {
 			// The last paramter is a boolean, returns true if success, false if failed
 			return super.DestroyPluginActorOverride({}, returnValue);
 		}
+		InstallPluginOverride(pluginName) {
+			pluginManager.Install({packageSlug: pluginName}).then(function(res) {
+				console.log("yes", res);
+			}).catch(function(res) {
+				console.log("No", res);
+			});
+			var returnValue = true;
+
+			// First parameter are required but has no meaning for the super-function..
+			// The last paramter is a boolean, returns true if success, false if failed
+			return super.InstallPluginOverride("", returnValue);
+		}
 		GetAvailablePluginListOverride() {
 			return super.GetAvailablePluginListOverride(pluginManager.getAvailablePluginList().map(function(plugin) {
 				return plugin.packageSlug;

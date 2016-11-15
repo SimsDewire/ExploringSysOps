@@ -37,13 +37,16 @@ var Plugin = {
 			JavascriptLibrary.MakeDirectory(pluginsDir, true);
 
 		return network('GET', gitUrl).then(function(res) {
+      console.log(JSON.stringify(res));
 			return res
 			// Only looks at repositories with default branch == uejs_plugin and the repo cannot be private
 			.filter(function(p) {return !p.private && p.default_branch == 'uejs_plugin';})
 			.map(function(plugin_info) {
 				return new PluginObject(plugin_info);
 			});
-		});
+		}).catch(function(e) {
+      console.log("catch:", e)
+    });
 	},
 	GetPluginActors: function (pluginSlugName) {
 		if(pluginSlugName in installedPlugins)
@@ -371,11 +374,14 @@ module.exports.TogglePluginList = function () {
 }
 */
 module.exports.getAvailablePluginList = function() {
+  console.log(JSON.stringify(availablePlugins));
 	return availablePlugins;
 };
 module.exports.getInstalledPluginList = function() {
 	return installedPlugins;
 };
+
 module.exports.Instantiate = Plugin.Instantiate;
+module.exports.Install = Plugin.Install;
 module.exports.Destroy = Plugin.Destroy;
 module.exports.GetPluginActors = Plugin.GetPluginActors;
