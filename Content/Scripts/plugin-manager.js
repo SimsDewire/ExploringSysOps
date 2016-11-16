@@ -15,7 +15,7 @@ var pluginsDir = Context.GetDir('GameSaved') + 'PluginJS/';
 // var pluginsDir = '../../Saved/PluginJS';
 // var pluginsDir = 'C:/Users/DevGroupDewire/AppData/Roaming/PluginJS';
 var repoExceptions = ['ExploringSysOps', 'ExploringSysOpsServer']; // The repos that will be ignored as a plugin repo
-var gitUrl = 'https://api.github.com/orgs/SIMSDewire/repos';
+var gitUrl = 'http://192.168.1.110:3000/repos';
 
 const network = require('request');
 
@@ -37,16 +37,13 @@ var Plugin = {
 			JavascriptLibrary.MakeDirectory(pluginsDir, true);
 
 		return network('GET', gitUrl).then(function(res) {
-      console.log(JSON.stringify(res));
 			return res
-			// Only looks at repositories with default branch == uejs_plugin and the repo cannot be private
-			.filter(function(p) {return !p.private && p.default_branch == 'uejs_plugin';})
 			.map(function(plugin_info) {
 				return new PluginObject(plugin_info);
 			});
 		}).catch(function(e) {
-      console.log("catch:", e)
-    });
+		      console.log("catch:", e)
+    	});
 	},
 	GetPluginActors: function (pluginSlugName) {
 		if(pluginSlugName in installedPlugins)
@@ -58,43 +55,64 @@ var Plugin = {
 		if(!JavascriptLibrary.DirectoryExists(pluginsDir))
 			JavascriptLibrary.MakeDirectory(pluginsDir, true);
 		var pluginName = plugin_info.packageSlug;
-		var gitProcess = JavascriptProcess.Create('git', 'clone https://github.com/' + plugin_info.packageSlug + ' ' + pluginName,
-								false,	// bLaunchDetached
-								false,	// bLaunchHidden
-								false,	// bLaunchReallyHidden
-								0,		// PriorityModifier
-								pluginsDir, // WD
-								false	// bUsePipe
-		);
-		return Promise.resolve({ 
-			then: function(resolve, reject) {
-				gitProcess.Wait();
-				var code;
-				var success = gitProcess.GetReturnCode(code);
-				if(success) {
-					Context.RunFile(pluginsDir + pluginName + "/index.js");
-					var pluginScript = GWorld.exports;
-					installedPlugins[pluginName] = pluginScript;
-					
-					return resolve(code, plugin_info);
-				} 
-				return reject(code, plugin_info);
+		var pluginRealInfo = undefined;
+		for(var i in availablePlugins) {
+			console.log(pluginName, availablePlugins[i].packageSlug);
+			if(availablePlugins[i].packageSlug == pluginName) {
+				pluginRealInfo = availablePlugins[i];
+				break;
 			}
-		});
+		}
+		if(pluginRealInfo) {
+			var gitProcess = JavascriptProcess.Create('git', 'clone ' + pluginRealInfo.packageUrl + ' ' + pluginName,
+									true,	// bLaunchDetached
+									true,	// bLaunchHidden
+									false,	// bLaunchReallyHidden
+									0,		// PriorityModifier
+									pluginsDir, // WD
+									true	// bUsePipe, was false before when working
+			);
+			console.log(pluginRealInfo.packageUrl);
+			return Promise.resolve({ 
+				then: function(resolve, reject) {
+					try {
+						gitProcess.Wait();
+						var code;
+						var success = gitProcess.GetReturnCode(code);
+						if(success) {
+							Context.RunFile(pluginsDir + pluginName + "/index.js");
+							var pluginScript = GWorld.exports;
+							installedPlugins[pluginName] = pluginScript;
+							
+							return resolve(code, plugin_info);
+						} 
+					} catch(e){
+						console.error("Error: ", e);
+					}
+
+					return reject(code, plugin_info);
+				}
+			});
+		}
+		return false;
 	},
 	// Removes the plugin from the project directory
 	UnInstall: function(plugin_info) {
-		if(!JavascriptLibrary.DirectoryExists(pluginsDir))
+		//	Create pluginJS directory if not exist
+		if(!JavascriptLibrary.DirectoryExists(pluginsDir)){
 			JavascriptLibrary.MakeDirectory(pluginsDir, true);
-		
-				return new Promise(function(resolve,reject) {
-						if (JavascriptLibrary.DirectoryExists(plugin_info.packageDir) &&
-							JavascriptLibrary.DeleteDirectory(plugin_info.packageDir,true,true)) {
-								resolve();
-						} else {
-								reject(new Error('delete failed'), plugin_info);
-						}
-				});
+			console.log("Uninstall: Dir does not exist");
+		}
+		console.log(JavascriptLibrary.DirectoryExists(plugin_info.packageDir),JavascriptLibrary.DeleteDirectory(plugin_info.packageDir,true,true) );
+		if (JavascriptLibrary.DirectoryExists(plugin_info.packageDir) &&
+				JavascriptLibrary.DeleteDirectory(plugin_info.packageDir,true,true)) {
+			console.log("Uninstall: deleting directory");
+			return new Promise(function(resolve,reject) {
+				resolve();
+			});
+		} 
+		console.log("Uninstall: return false");
+		return false;
 	},
 	IsValid: function(plugin_info) {
 		if(!JavascriptLibrary.DirectoryExists(plugin_info.packageDir))
@@ -374,7 +392,6 @@ module.exports.TogglePluginList = function () {
 }
 */
 module.exports.getAvailablePluginList = function() {
-  console.log(JSON.stringify(availablePlugins));
 	return availablePlugins;
 };
 module.exports.getInstalledPluginList = function() {
@@ -383,5 +400,6 @@ module.exports.getInstalledPluginList = function() {
 
 module.exports.Instantiate = Plugin.Instantiate;
 module.exports.Install = Plugin.Install;
+module.exports.UnInstall = Plugin.UnInstall;
 module.exports.Destroy = Plugin.Destroy;
 module.exports.GetPluginActors = Plugin.GetPluginActors;

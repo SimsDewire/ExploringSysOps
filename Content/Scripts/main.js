@@ -61,17 +61,22 @@ function main() {
 			return super.DestroyPluginActorOverride({}, returnValue);
 		}
 		InstallPluginOverride(pluginName) {
-			pluginManager.Install({packageSlug: pluginName}).then(function(res) {
-				console.log("yes", res);
-			}).catch(function(res) {
-				console.log("No", res);
-			});
-			var returnValue = true;
+			 // Returns a promise function with the result how this worked out but cannot be used since it is asyncronous
+			var returnValue = pluginManager.Install({packageSlug: pluginName});
 
 			// First parameter are required but has no meaning for the super-function..
 			// The last paramter is a boolean, returns true if success, false if failed
 			return super.InstallPluginOverride("", returnValue);
 		}
+		UnInstallPluginOverride(pluginName) {
+			 // Returns a promise function with the result how this worked out but cannot be used since it is asyncronous
+			var returnValue = pluginManager.UnInstall({packageSlug: pluginName});
+
+			// First parameter are required but has no meaning for the super-function..
+			// The last paramter is a boolean, returns true if success, false if failed
+			return super.UnInstallPluginOverride("", returnValue);
+		}
+
 		GetAvailablePluginListOverride() {
 			return super.GetAvailablePluginListOverride(pluginManager.getAvailablePluginList().map(function(plugin) {
 				return plugin.packageSlug;
