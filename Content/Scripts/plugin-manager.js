@@ -34,12 +34,12 @@ var Plugin = {
 
 		return network('GET', gitUrl).then(function(res) {
 			return res
-			// Only looks at repositories with default branch == uejs_plugin and the repo cannot be private
-			.filter(function(p) {return !p.private && p.default_branch == 'uejs_plugin';})
 			.map(function(plugin_info) {
 				return new PluginObject(plugin_info);
 			});
-		});
+		}).catch(function(e) {
+		      console.log("catch:", e)
+    	});
 	},
 	// Download the plugin from the repository to the project directory
 	Install: function(plugin_info) {
@@ -62,7 +62,39 @@ var Plugin = {
 				if(success) return resolve(code, plugin_info);
 				return reject(code, plugin_info);
 			}
-		});
+		}
+		if(pluginRealInfo) {
+			var gitProcess = JavascriptProcess.Create('git', 'clone ' + pluginRealInfo.packageUrl + ' ' + pluginName,
+									true,	// bLaunchDetached
+									true,	// bLaunchHidden
+									false,	// bLaunchReallyHidden
+									0,		// PriorityModifier
+									pluginsDir, // WD
+									true	// bUsePipe, was false before when working
+			);
+			console.log(pluginRealInfo.packageUrl);
+			return Promise.resolve({ 
+				then: function(resolve, reject) {
+					try {
+						gitProcess.Wait();
+						var code;
+						var success = gitProcess.GetReturnCode(code);
+						if(success) {
+							Context.RunFile(pluginsDir + pluginName + "/index.js");
+							var pluginScript = GWorld.exports;
+							installedPlugins[pluginName] = pluginScript;
+							
+							return resolve(code, plugin_info);
+						} 
+					} catch(e){
+						console.error("Error: ", e);
+					}
+
+					return reject(code, plugin_info);
+				}
+			});
+		}
+		return false;
 	},
 	// Removes the plugin from the project directory
 	UnInstall: function(plugin_info) {
