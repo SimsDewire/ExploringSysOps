@@ -7,16 +7,12 @@
  *  - HidePluginList(): Closes/hides a visual menulist with all plugins and their status
  *  - TogglePluginList(): Makes the plugin list visible if it is hidden and hides it if it is visible
  **/
-"use strict";
+
 // SEE: https://github.com/ncsoft/Unreal.js-core/blob/master/Source/V8/Private/JavascriptProcess.cpp
-// var pluginsDir = JavascriptProcess.GetString('ApplicationSettingsDir') + '/SimsDewire-PluginJS/';
-// var pluginsDir = Context.GetDir('GameContent') + 'PluginJS/';
-var pluginsDir = Context.GetDir('GameSaved') + 'PluginJS/';
-// var pluginsDir = '../../Saved/PluginJS';
-// var pluginsDir = 'C:/Users/DevGroupDewire/AppData/Roaming/PluginJS';
+// var pluginDir = JavascriptProcess.GetString('ApplicationSettingsDir') + '/SimsDewire-PluginJS/';
+var pluginDir = Context.GetDir('GameContent') + '/PluginJS/';
 var repoExceptions = ['ExploringSysOps', 'ExploringSysOpsServer']; // The repos that will be ignored as a plugin repo
 var gitUrl = 'https://api.github.com/orgs/SIMSDewire/repos';
-
 const network = require('request');
 
 // Compile classes
@@ -33,8 +29,8 @@ const instantiator = require('instantiator')
 //  IsValid - is a plugin object is valid
 var Plugin = {
 	FetchList: function () {
-		if(!JavascriptLibrary.DirectoryExists(pluginsDir))
-			JavascriptLibrary.MakeDirectory(pluginsDir, true);
+		if(!JavascriptLibrary.DirectoryExists(pluginDir))
+			JavascriptLibrary.MakeDirectory(pluginDir, true);
 
 		return network('GET', gitUrl).then(function(res) {
 			return res
@@ -45,22 +41,17 @@ var Plugin = {
 			});
 		});
 	},
-	GetPluginActors: function (pluginSlugName) {
-		if(pluginSlugName in installedPlugins)
-			return installedPlugins[pluginSlugName].getPluginActors();
-		return false;
-	},
 	// Download the plugin from the repository to the project directory
 	Install: function(plugin_info) {
-		if(!JavascriptLibrary.DirectoryExists(pluginsDir))
-			JavascriptLibrary.MakeDirectory(pluginsDir, true);
-		var pluginName = plugin_info.packageSlug;
-		var gitProcess = JavascriptProcess.Create('git', 'clone https://github.com/' + plugin_info.packageSlug + ' ' + pluginName,
+		if(!JavascriptLibrary.DirectoryExists(pluginDir))
+			JavascriptLibrary.MakeDirectory(pluginDir, true);
+
+		var gitProcess = JavascriptProcess.Create('git', 'clone https://github.com/' + plugin_info.packageSlug + ' ' + plugin_info.packageSlug.replace(/\//gm, '_'),
 								false,	// bLaunchDetached
 								false,	// bLaunchHidden
 								false,	// bLaunchReallyHidden
 								0,		// PriorityModifier
-								pluginsDir, // WD
+								pluginDir, // WD
 								false	// bUsePipe
 		);
 		return Promise.resolve({ 
@@ -68,21 +59,15 @@ var Plugin = {
 				gitProcess.Wait();
 				var code;
 				var success = gitProcess.GetReturnCode(code);
-				if(success) {
-					Context.RunFile(pluginsDir + pluginName + "/index.js");
-					var pluginScript = GWorld.exports;
-					installedPlugins[pluginName] = pluginScript;
-					
-					return resolve(code, plugin_info);
-				} 
+				if(success) return resolve(code, plugin_info);
 				return reject(code, plugin_info);
 			}
 		});
 	},
 	// Removes the plugin from the project directory
 	UnInstall: function(plugin_info) {
-		if(!JavascriptLibrary.DirectoryExists(pluginsDir))
-			JavascriptLibrary.MakeDirectory(pluginsDir, true);
+		if(!JavascriptLibrary.DirectoryExists(pluginDir))
+			JavascriptLibrary.MakeDirectory(pluginDir, true);
 		
 				return new Promise(function(resolve,reject) {
 						if (JavascriptLibrary.DirectoryExists(plugin_info.packageDir) &&
@@ -99,72 +84,14 @@ var Plugin = {
 		var pluginContent = Context.ReadDirectory(plugin_info.packageDir);
 		var filesForValidPlugin = ['index.js'];
 		for(var j in pluginContent.OutItems) {
-			var fileIndex = filesForValidPlugin.indexOf(pluginContent.OutItems[j].Name.split("/").pop());
+			var fileIndex = filesForValidPlugin.indexOf(pluginContent.OutItems[j].Name);
 			if(fileIndex > -1)
 				filesForValidPlugin.splice(fileIndex, 1);
 		}
 		return filesForValidPlugin.length == 0;
-	},
-	Instantiate: function(plugin_info, index, location, rotation) {
-		if (typeof plugin_info === "string" )
-			plugin_info = {packageSlug: plugin_info};
-		index = index || 0;
-		for (var i in installedPlugins) {
-			if (i == plugin_info.packageSlug){
-				var actors = installedPlugins[i].getPluginActors();
-				try {
-					if(typeof actors == "object" && index in actors) {
-						actors = actors[index].actor;
-						return new actors(GWorld, location, rotation);
-					}
-				} catch(e) {
-					console.log(e, "Invalid object to instantiate");
-				}
-			}
-		}
-		return false;
-	},
-	Destroy: function(actor) {
-		try {
-			console.log("AA", actor.DestroyActor);
-			if(typeof actor == "object" && typeof actor.DestroyActor == "function") {
-				actor.DestroyActor();
-				return true;
-			}
-		}
-		catch(e) {
-			return false;
-		}
 	}
 };
 
-/**
- * Search plugin folder after valid plugins and return the names of the plugins found
- * This will be executed when the file is required like the constructor
- */
-var installedPlugins = {};
-var installedPlugins = (function(){
-	var plugins = {};
-	var dirs = Context.ReadDirectory(pluginsDir);
-	for(var i in dirs.OutItems) {
-		var OutItem = dirs.OutItems[i];
-		if(OutItem.bIsDirectory) {
-			if(Plugin.IsValid({packageDir: OutItem.Name})) {
-				var pathArr = OutItem.Name.split('/');
-				// var pluginScript = require("../PluginJS/" + pathArr[pathArr.length-1] + "/index.js");
-				Context.RunFile(OutItem.Name + "/index.js");
-				var pluginScript = GWorld.exports;
-				plugins[OutItem.Name.split("/").pop()] = pluginScript;
-			}
-		}
-	}
-	return plugins;
-})(undefined);
-
-var availablePlugins = [];
-Plugin.FetchList().then(function(plugins) {
-	availablePlugins = plugins;
-});
 /**
  * An object that is verified as a plugin and can be instantiated in the scene
  */
@@ -173,10 +100,10 @@ var PluginObject = function(plugin_info) {
 	try {
 		const packageUrl = plugin_info.html_url;
 		const packageSlug = plugin_info.full_name.toLowerCase();
-		self.name 			= plugin_info.full_name.split('/', 2)[1]; // repo name
+		self.name 			= plugin_info.full_name.split('/', 2)[1];
 		self.packageUrl		= packageUrl;
-		self.packageSlug	= packageSlug.replace(/\//gm, '_');
-		self.packageDir		= pluginsDir + self.packageSlug;
+		self.packageSlug	= packageSlug;
+		self.packageDir		= pluginDir + packageSlug.replace(/\//gm, '_');
 		self.installed		= JavascriptLibrary.DirectoryExists(self.packageDir);
 	} catch(e) {
 		console.error(e);
@@ -191,9 +118,6 @@ var PluginObject = function(plugin_info) {
 	self.IsValid = function() {
 		return Plugin.IsValid(self);
 	};
-	self.Instantiate = function(){
-		return Plugin.Instantiate(self);
-	}
 }
 
 /**
@@ -342,8 +266,9 @@ var WidgetHandler = uclass(WidgetHandler_S);
 var menuInstance = undefined;
 // Make certain parts of this file public
 module.exports = {};
-
-/** NOT IN USED
+module.exports.List = function(ops) {
+	return Plugin.FetchList();
+};
 module.exports.ShowPluginList = function() {
 	if(typeof menuInstance === "object") return false;
 	const player = GWorld.GetPlayerController(0);
@@ -369,13 +294,3 @@ module.exports.TogglePluginList = function () {
 		return module.exports.ShowPluginList();
 	return true;
 }
-*/
-module.exports.getAvailablePluginList = function() {
-	return availablePlugins;
-};
-module.exports.getInstalledPluginList = function() {
-	return installedPlugins;
-};
-module.exports.Instantiate = Plugin.Instantiate;
-module.exports.Destroy = Plugin.Destroy;
-module.exports.GetPluginActors = Plugin.GetPluginActors;
