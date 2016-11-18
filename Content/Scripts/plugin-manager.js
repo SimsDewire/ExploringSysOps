@@ -95,7 +95,8 @@ var Plugin = {
 
 				return reject(code, plugin_info);
 			}
-		}
+		});
+
 		if(pluginRealInfo) {
 			var gitProcess = JavascriptProcess.Create('git', 'clone ' + pluginRealInfo.packageUrl + ' ' + pluginName,
 									true,	// bLaunchDetached
@@ -105,7 +106,6 @@ var Plugin = {
 									pluginsDir, // WD
 									true	// bUsePipe, was false before when working
 			);
-			console.log(pluginRealInfo.packageUrl);
 			return Promise.resolve({ 
 				then: function(resolve, reject) {
 					try {
@@ -141,6 +141,7 @@ var Plugin = {
 		if (JavascriptLibrary.DirectoryExists(plugin_info.packageDir) &&
 				JavascriptLibrary.DeleteDirectory(plugin_info.packageDir,true,true)) {
 			return new Promise(function(resolve,reject) {
+				delete installedPlugins[plugin_info.packageSlug];
 				resolve();
 			});
 		} 

@@ -66,7 +66,7 @@ function main() {
 
 			// First parameter are required but has no meaning for the super-function..
 			// The last paramter is a boolean, returns true if success, false if failed
-			return super.InstallPluginOverride("", returnValue);
+			return super.InstallPluginOverride("", false !== returnValue);
 		}
 		UnInstallPluginOverride(pluginName) {
 			console.log(pluginName, pluginManager.GetPluginByName(pluginName));
@@ -75,7 +75,7 @@ function main() {
 
 			// First parameter are required but has no meaning for the super-function..
 			// The last paramter is a boolean, returns true if success, false if failed
-			return super.UnInstallPluginOverride("", returnValue);
+			return super.UnInstallPluginOverride("", false !== returnValue);
 		}
 
 		GetAvailablePluginListOverride() {
