@@ -41,10 +41,6 @@ function main() {
 	class ScriptHandler_S extends Blueprint.Load('/Game/BlueprintScripts/ScriptManager').GeneratedClass {
 		ReceiveBeginPlay() {
 			super.ReceiveBeginPlay();
-			console.log("hej");
-		}
-		Print(params) {
-			console.log("innetoa", params);
 		}
 		InstantiatePluginActorOverride(pluginName, pluginActor, location, rotation) {
 			var returnValue = false !== pluginManager.Instantiate(pluginName, pluginActor, location, rotation);
@@ -69,7 +65,7 @@ function main() {
 			return super.InstallPluginOverride("", false !== returnValue);
 		}
 		UnInstallPluginOverride(pluginName) {
-			console.log(pluginName, pluginManager.GetPluginByName(pluginName));
+			console.log("Uninstall: ", pluginName, pluginManager.GetPluginByName(pluginName));
 			 // Returns a promise function with the result how this worked out but cannot be used since it is asyncronous
 			var returnValue = pluginManager.UnInstall(pluginManager.GetPluginByName(pluginName));
 
