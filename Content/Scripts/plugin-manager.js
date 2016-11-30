@@ -83,10 +83,9 @@ var Plugin = {
 					var code;
 					var success = gitProcess.GetReturnCode(code);
 					if(success) {
-						Context.RunFile(pluginsDir + pluginName + "/index.js");
-						var pluginScript = GWorld.exports;
+						var filePath = pluginsDir + pluginName + "/index.js";
+						var pluginScript = installPlugin(filePath);
 						installedPlugins[pluginName] = pluginScript;
-						
 						return resolve(code, plugin_info);
 					} 
 				} catch(e){
@@ -191,6 +190,18 @@ var Plugin = {
 		}
 	}
 };
+function installPlugin(filePath) {
+
+	Context.RunFile(filePath);
+	var pluginScript = GWorld.exports;
+
+	var actors = pluginScript.getPluginActors();
+	for(var i in actors) {
+		// Compile classes
+		actors[i].actor = uclass(actors[i].actor);
+	}
+	return pluginScript;
+}
 
 /**
  * Search plugin folder after valid plugins and return the names of the plugins found
@@ -205,10 +216,7 @@ var installedPlugins = (function(){
 		if(OutItem.bIsDirectory) {
 			if(Plugin.IsValid({packageDir: OutItem.Name})) {
 				var pathArr = OutItem.Name.split('/');
-				// var pluginScript = require("../PluginJS/" + pathArr[pathArr.length-1] + "/index.js");
-				Context.RunFile(OutItem.Name + "/index.js");
-				var pluginScript = GWorld.exports;
-				plugins[OutItem.Name.split("/").pop()] = pluginScript;
+				plugins[OutItem.Name.split("/").pop()] = installPlugin(OutItem.Name + "/index.js");
 			}
 		}
 	}
@@ -219,6 +227,8 @@ var availablePlugins = [];
 Plugin.FetchList().then(function(plugins) {
 	availablePlugins = plugins;
 });
+
+
 /**
  * An object that is verified as a plugin and can be instantiated in the scene
  */
@@ -425,6 +435,7 @@ module.exports.TogglePluginList = function () {
 }
 */
 module.exports.getAvailablePluginList = function() {
+	console.log("AA", JSON.stringify(installedPlugins));
 	return availablePlugins;
 };
 module.exports.getInstalledPluginList = function() {

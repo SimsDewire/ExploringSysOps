@@ -38,6 +38,7 @@ function main() {
 	 * This class will maybe be used for inheritence later in plugins
 	 **/
 	const uclass = require('uclass')().bind(this,global)
+	// class ScriptHandler_S extends Root.ResolveClass('ScriptManager') {
 	class ScriptHandler_S extends Blueprint.Load('/Game/BlueprintScripts/ScriptManager').GeneratedClass {
 		ReceiveBeginPlay() {
 			super.ReceiveBeginPlay();

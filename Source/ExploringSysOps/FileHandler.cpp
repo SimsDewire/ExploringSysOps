@@ -6,7 +6,7 @@
 bool UFileHandler::writeToFile(FString fileName, FString text)
 {
 	std::fstream File(*(FPaths::GameSavedDir() + "\\" + fileName), std::fstream::app);
-	UE_LOG(LogTemp, Warning, TEXT("Your message %s"), *(FPaths::GameSavedDir() + "/" + fileName));
+	// UE_LOG(LogTemp, Warning, TEXT("Your message %s"), *(FPaths::GameSavedDir() + "/" + fileName));
 	if(File.is_open())
 		return (bool)(File << TCHAR_TO_UTF8(*text));
 	return false;
