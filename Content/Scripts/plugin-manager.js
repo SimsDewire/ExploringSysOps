@@ -425,6 +425,7 @@ module.exports.TogglePluginList = function () {
 }
 */
 module.exports.getAvailablePluginList = function() {
+	console.log("AA", JSON.stringify(installedPlugins));
 	return availablePlugins;
 };
 module.exports.getInstalledPluginList = function() {
