@@ -15,6 +15,8 @@
 // This function is called when the javascript UE library is loaded
 function main() {
 	var pluginManager = require('plugin-manager');
+	var Network = require('Network');
+	GWorld.Network = Network;
 	(function testcode_for_plugins() {
 		var location = {X: -230, Y: -230, Z:450};
 		var rotation = {ROLL: 0, PITCH: 0, YAW: 0};
