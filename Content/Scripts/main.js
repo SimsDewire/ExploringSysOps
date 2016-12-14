@@ -116,16 +116,16 @@ function main() {
 		 * This is functions calling plugin organiser
 		 */
 		SaveLayoutOverride() {
-			super.SaveLayout(pluginOrganiser.saveLayout());
+			super.SaveLayoutOverride(pluginOrganiser.saveLayout());
 		}
 		LoadLayoutOverride(layout) {
-			return super.LoadLayout("", pluginOrganiser.loadLayout(parseInt(layout.replace('Layout ', ''))));
+			return super.LoadLayoutOverride("", pluginOrganiser.loadLayout(parseInt(layout.replace('Layout ', '')) - 1));
 		}
 		RemoveLayoutOverride(layout) {
-			return super.removeLayout("", pluginOrganiser.removeLayout(parseInt(layout.replace('Layout ', ''))));
+			return super.RemoveLayoutOverride("", pluginOrganiser.removeLayout(parseInt(layout.replace('Layout ', '')) - 1));
 		}
 		GetLayoutsOverride() {
-			return super.GetLayouts(pluginOrganiser.getLayouts().map(function(layout, index) {
+			return super.GetLayoutsOverride(pluginOrganiser.getLayouts().map(function(layout, index) {
 				return "Layout " + (index + 1);
 			}));
 		}

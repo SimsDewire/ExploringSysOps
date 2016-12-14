@@ -4,7 +4,7 @@ function pluginOrganiser(pluginManager) {
 	var organiser = Object.assign({
 		pluginActors: []
 	}, localStorage.get('plugin-organiser'));
-
+	console.log(JSON.stringify(localStorage.get('plugin-organiser')));
 	this.saveLayout = function() {
 		var actors = [];
 		for(var i = 0; i < instantiatedPluginActors.length; i++) {
@@ -20,11 +20,18 @@ function pluginOrganiser(pluginManager) {
 	};
 	this.loadLayout = function (index) {
 		var actors = organiser.pluginActors[index];
+		console.log(index, JSON.stringify(actors));
 		if(!actors) return [];
-		for(var i = 0; i < actors.length; i++) {
-			pluginManager.Instantiate(actors.meta.plugin_info, actors.meta.index, actor.location, actor.rotation);
+		var prev = -1;
+		while(instantiatedPluginActors.length > 0 && prev != instantiatedPluginActors.length) {
+			prev = instantiatedPluginActors.length;
+			pluginManager.Destroy(instantiatedPluginActors[0].instance);
 		}
-		return organiser.pluginActors[index];
+		for(let i = 0; i < actors.length; i++) {
+			var actor = actors[i];
+			pluginManager.Instantiate(actor.meta.plugin_info, actor.meta.index, actor.location, actor.rotation);
+		}
+		return actors;
 	};
 	this.removeLayout = function (index) {
 		var actors = organiser.pluginActors[index];
@@ -39,5 +46,7 @@ function pluginOrganiser(pluginManager) {
 };
 
 if(typeof module == "object") {
-	module.exports = pluginOrganiser;
+	module.exports = function(pluginManager) {
+		return new pluginOrganiser(pluginManager);
+	};
 }

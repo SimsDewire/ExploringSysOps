@@ -190,13 +190,17 @@ var Plugin = {
 					if(instantiatedPluginActors[i].instance === actor) {
 						instantiatedPluginActors.splice(i, 1);
 						i--; // TODO: Replace with break when we now that this works!
+						break;
 					}
 				}
+				if(typeof actor.Destroyed == "function")
+					actor.Destroyed();
 				actor.DestroyActor();
 				return true;
 			}
 		}
 		catch(e) {
+						console.log("HEHEHEHEHEEH");
 			return false;
 		}
 	}
