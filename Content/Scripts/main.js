@@ -14,9 +14,12 @@
 
 // This function is called when the javascript UE library is loaded
 function main() {
-	var pluginManager = require('plugin-manager');
+	GWorld.ServerIP = 'http://127.0.0.1:3000';
 	var Network = require('Network');
-	GWorld.Network = Network;
+	var pluginManager = require('plugin-manager');
+	var pluginOrganiser = require('plugin-organiser')(pluginManager);
+
+	// GWorld.ServerIP = 'http://192.168.1.110:3000';
 	(function testcode_for_plugins() {
 		var location = {X: -230, Y: -230, Z:450};
 		var rotation = {ROLL: 0, PITCH: 0, YAW: 0};
@@ -45,6 +48,9 @@ function main() {
 		ReceiveBeginPlay() {
 			super.ReceiveBeginPlay();
 		}
+		/**
+		 * This is functions calling for the plugin manager
+		 */
 		InstantiatePluginActorOverride(pluginName, pluginActor, location, rotation) {
 			var returnValue = false !== pluginManager.Instantiate(pluginName, pluginActor, location, rotation);
 			
@@ -104,6 +110,24 @@ function main() {
 			if(actors != false && actorName in actors)
 				return super.GetPluginActorDescriptionOverride("", "", actors[actorName].description);
 			return super.GetPluginActorDescriptionOverride("", "", "");
+		}
+
+		/**
+		 * This is functions calling plugin organiser
+		 */
+		SaveLayoutOverride() {
+			super.SaveLayout(pluginOrganiser.saveLayout());
+		}
+		LoadLayoutOverride(layout) {
+			return super.LoadLayout("", pluginOrganiser.loadLayout(parseInt(layout.replace('Layout ', ''))));
+		}
+		RemoveLayoutOverride(layout) {
+			return super.removeLayout("", pluginOrganiser.removeLayout(parseInt(layout.replace('Layout ', ''))));
+		}
+		GetLayoutsOverride() {
+			return super.GetLayouts(pluginOrganiser.getLayouts().map(function(layout, index) {
+				return "Layout " + (index + 1);
+			}));
 		}
 	}      
 	var ScriptHandler = uclass(ScriptHandler_S);

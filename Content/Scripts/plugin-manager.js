@@ -15,7 +15,7 @@ var pluginsDir = Context.GetDir('GameSaved') + 'PluginJS/';
 // var pluginsDir = '../../Saved/PluginJS';
 // var pluginsDir = 'C:/Users/DevGroupDewire/AppData/Roaming/PluginJS';
 var repoExceptions = ['ExploringSysOps', 'ExploringSysOpsServer']; // The repos that will be ignored as a plugin repo
-var gitUrl = 'http://192.168.1.110:3000/repos';
+var gitUrl = GWorld.ServerIP + '/repos';
 
 const network = require('request');
 
@@ -53,7 +53,6 @@ var Plugin = {
 	GetPluginByName: function(pluginName) {
 
 		var pluginRealInfo = undefined;
-		console.log("Plugin name: ", JSON.stringify(availablePlugins));
 		for(var i in availablePlugins) {
 			if(availablePlugins[i].packageSlug == pluginName) {
 				pluginRealInfo = availablePlugins[i];
@@ -136,7 +135,6 @@ var Plugin = {
 			console.log("Uninstall: Dir does not exist");
 		}
 		if(!(typeof plugin_info == "object")) return false;
-		console.log(JSON.stringify(plugin_info));
 		if (JavascriptLibrary.DirectoryExists(plugin_info.packageDir) &&
 				JavascriptLibrary.DeleteDirectory(plugin_info.packageDir,true,true)) {
 			return new Promise(function(resolve,reject) {
@@ -167,8 +165,16 @@ var Plugin = {
 				var actors = installedPlugins[i].getPluginActors();
 				try {
 					if(typeof actors == "object" && index in actors) {
-						actors = actors[index].actor;
-						return new actors(GWorld, location, rotation);
+						var actor = actors[index];
+						var actorInstance =  new actor.actor(GWorld, location, rotation);
+						instantiatedPluginActors.push({
+							meta: {
+								plugin_info: plugin_info, 
+								index: index
+							}, 
+							instance: actorInstance
+						});
+						return actorInstance;
 					}
 				} catch(e) {
 					console.log(e, "Invalid object to instantiate");
@@ -179,8 +185,13 @@ var Plugin = {
 	},
 	Destroy: function(actor) {
 		try {
-			console.log("AA", actor.DestroyActor);
 			if(typeof actor == "object" && typeof actor.DestroyActor == "function") {
+				for(var i = 0; i < instantiatedPluginActors.length; i++) {
+					if(instantiatedPluginActors[i].instance === actor) {
+						instantiatedPluginActors.splice(i, 1);
+						i--; // TODO: Replace with break when we now that this works!
+					}
+				}
 				actor.DestroyActor();
 				return true;
 			}
@@ -228,6 +239,7 @@ Plugin.FetchList().then(function(plugins) {
 	availablePlugins = plugins;
 });
 
+var instantiatedPluginActors = [];
 
 /**
  * An object that is verified as a plugin and can be instantiated in the scene
@@ -407,7 +419,7 @@ var menuInstance = undefined;
 // Make certain parts of this file public
 module.exports = {};
 
-/** NOT IN USED
+/** NOT IN USE
 module.exports.ShowPluginList = function() {
 	if(typeof menuInstance === "object") return false;
 	const player = GWorld.GetPlayerController(0);
@@ -435,11 +447,13 @@ module.exports.TogglePluginList = function () {
 }
 */
 module.exports.getAvailablePluginList = function() {
-	console.log("AA", JSON.stringify(installedPlugins));
 	return availablePlugins;
 };
 module.exports.getInstalledPluginList = function() {
 	return installedPlugins;
+};
+module.exports.getInstantiatedPluginActors = function() {
+	return instantiatedPluginActors;
 };
 
 module.exports.Instantiate = Plugin.Instantiate;
